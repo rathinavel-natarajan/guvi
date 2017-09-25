@@ -1,12 +1,13 @@
 #include <stdio.h>
 int main()
 {
-    int i,j,k,a[100],count=0;
-    for(i=0;i<100;i++){
+    int i,j,k,a[100],count=0,n;
+    scanf("%d ",&n);
+    for(i=0;i<n;i++){
         scanf("%d",&a[i]);
     }
-    for(j=0;j<i;j++){
-        for(k=j+1;k<i;k++){
+    for(j=0;j<n;j++){
+        for(k=j+1;k<n;k++){
             if(a[j]==a[k]) {
                 printf("%d ",a[k]); count=1;
                 break;
