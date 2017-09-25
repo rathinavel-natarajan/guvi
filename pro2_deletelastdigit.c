@@ -2,15 +2,15 @@
 
 int main()
 {
-    int i,x=0,n,digi,a[10],temp,fin=0;
-    scanf("%d %d",n,digi);
+    int i,j,x=0,n,digi,a[10],temp,fin=0;
+    scanf("%d %d",&n,&digi);
     while(n!=0){
         a[x]=n%10;
         n/=10;
         x++;
-    }
+    } 
     for(i=0;i<x;i++){
-        for(j=0;j<x;j++){
+        for(j=i+1;j<x;j++){
             if(a[i]>a[j]){
                 temp=a[j];
                 a[j]=a[i];
